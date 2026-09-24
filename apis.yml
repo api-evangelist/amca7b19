@@ -1,23 +1,52 @@
 aid: amca7b19
+
 name: Amca7b19
-description: 'Amca7b19 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Amca7b19 is a placeholder company entry created during the API Evangelist harvest process. It currently has no publicly documented API, website, or other digital presence beyond this stub record. The entry exists to allow the enrichment pipeline to process and eventually enrich the record should the company publish an API or related resources in the future. This description reflects the lack of available information and serves as a basis for future updates when real data becomes available.'
+
 url: https://raw.githubusercontent.com/api-evangelist/amca7b19/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
 - Company
-apis: []
+- Technology
+- Data
+- API
+- Placeholder
+- Stub
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/amca7b19-hosts.yml
+- type: Vendors
+  url: vendors/amca7b19-vendors.yml
+- type: DomainSecurity
+  url: security/amca7b19-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/amca7b19
+
+apis: []
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
